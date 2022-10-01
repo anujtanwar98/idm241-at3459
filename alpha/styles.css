@@ -1,0 +1,104 @@
+:root{
+    --main-color: #FFB500;
+    --secondary-color: #351C15;
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+@font-face {
+    font-family: 'bank-gothic-medium';
+    src: url('assest/fonts/bank-gothic-medium.woff2');
+}
+@font-face {
+    font-family: 'bank-gothic-regular';
+    src:url('assest/fonts/bank-gothic-regular.woff2');
+}
+@font-face {
+    font-family: 'tomkin-medium';
+    src: url('assest/fonts/tomkin-medium.woff2');
+}
+@font-face {
+    font-family: 'tomkin-regular';
+    src:url('assest/fonts/tomkin-regular.woff2');
+}
+
+/* header */
+
+header{
+    font-family: bank-gothic-regular, sans-serif;
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--white-color);
+}
+.logo-icon {
+    max-width: 200px;
+}
+.ups-link {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* main */
+
+/* .box {
+    margin: auto 0;
+    background-color: #FFB500;
+} */
+.sub-box {
+    font-family: tomkin-regular, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 2rem 0;
+    margin: auto 0;
+    /* align-content: center; */
+}
+.small-boxes {
+    width: 20rem;
+    border-radius: .75rem;
+    margin: 2rem .5rem;
+    align-content: center;
+}
+.small-box-title {
+    color: var(--white-color);
+    padding: 0.75rem;
+    border-radius: .75rem .75rem 0 0;
+    background-color: var(--secondary-color);
+    text-align: center;
+    font-size: 1.25rem;
+}
+.small-box-text {
+    padding: 1rem;
+    border: 3px var(--black-color) solid;
+    border-top: none;
+    border-radius: 0 0 .75rem .75rem;
+    height: 100%;
+    text-align: center;
+    color: var(--secondary-color);
+}
+.small-box-text p {
+    text-align: left;
+}
+
+/* footer */
+footer {
+    font-family: bank-gothic-medium, sans-serif;
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--white-color);
+}
