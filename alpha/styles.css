@@ -14,19 +14,19 @@
 
 @font-face {
     font-family: 'bank-gothic-medium';
-    src: url('assest/fonts/bank-gothic-medium.woff2');
+    src: url('asset/fonts/bank-gothic-medium.woff2');
 }
 @font-face {
     font-family: 'bank-gothic-regular';
-    src:url('assest/fonts/bank-gothic-regular.woff2');
+    src:url('asset/fonts/bank-gothic-regular.woff2');
 }
 @font-face {
     font-family: 'tomkin-medium';
-    src: url('assest/fonts/tomkin-medium.woff2');
+    src: url('asset/fonts/tomkin-medium.woff2');
 }
 @font-face {
     font-family: 'tomkin-regular';
-    src:url('assest/fonts/tomkin-regular.woff2');
+    src:url('asset/fonts/tomkin-regular.woff2');
 }
 
 /* header */
