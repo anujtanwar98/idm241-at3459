@@ -1,6 +1,7 @@
 :root{
     --main-color: #FFB500;
     --secondary-color: #351C15;
+    --third-color: #7C5642;
     --white-color: #fff;
     --black-color: #000;
 }
@@ -58,7 +59,7 @@ header{
 .sub-box {
     font-family: tomkin-regular, sans-serif;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
@@ -74,7 +75,7 @@ header{
     align-content: center;
 }
 .small-box-title {
-    color: var(--white-color);
+    color: var(--main-color);
     padding: 0.75rem;
     border-radius: .75rem .75rem 0 0;
     background-color: var(--secondary-color);
@@ -83,15 +84,35 @@ header{
 }
 .small-box-text {
     padding: 1rem;
-    border: 3px var(--black-color) solid;
+    border: 3px var(--secondary-color) solid;
     border-top: none;
     border-radius: 0 0 .75rem .75rem;
     height: 100%;
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--white-color);
+    background-color: var(--third-color);
 }
 .small-box-text p {
     text-align: left;
+}
+
+
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--main-color);
+}
+.images {
+    max-width: 600px;
+    margin: 30px;
+    color: var(--white-color);
+    text-align: center;
+}
+.redesign-img {
+    width: 100%;
+    border-radius: 5px;
+    border: solid 2px var(--secondary-color);
 }
 
 /* footer */
@@ -101,4 +122,8 @@ footer {
     padding: 1rem 0;
     text-align: center;
     color: var(--white-color);
+}
+
+@media screen and (max-width: 592px) {
+    
 }
