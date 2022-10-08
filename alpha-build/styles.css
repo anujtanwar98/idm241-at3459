@@ -218,7 +218,7 @@
         height: 100%;
         padding-top: 40px;
         transition: 0.5s;
-        /* overflow: hidden; */
+        overflow: hidden;
     }
     .topnav {
         display: none;
