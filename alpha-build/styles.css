@@ -4,7 +4,7 @@
     --third-color: #7C5642;
     --white-color: #fff;
     --black-color: #000;
-    --grey-color: #9f9f9f;
+    --grey-color: #595959;
 }
 
 *{
@@ -88,7 +88,6 @@
 }
 .nav-bar:after {
     right: 0;
-    /* background: #fff; */
     transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
   
@@ -97,7 +96,7 @@
     border: 1px solid var(--main-color);
     border-radius: 5px;
     width: 100%;
-    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition: width 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
   
 .nav-bar:hover:after {
@@ -140,6 +139,12 @@
 
 
 /* dropdown content end */
+
+/* mobile nav starts */
+
+
+
+/* mobile nav ends */
 
 /* span animation start */
 
@@ -267,6 +272,8 @@ footer {
     text-align: center;
     color: var(--white-color);
 }
+
+
 
 @media screen and (max-width: 550px) {
     
