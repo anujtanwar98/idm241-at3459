@@ -501,6 +501,15 @@ footer {
 }
 
 
+/* additioanl info starts */
+
+.additional-info {
+    background-color: var(--main-color);
+    padding: 1rem 0 2rem;
+    font-family: tomkin-medium, sans-serif;
+    text-align: center;
+}
+
 
 @media screen and (max-width: 550px) {
     
