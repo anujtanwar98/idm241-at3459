@@ -337,12 +337,12 @@
 
 
     /* new media qu */
-    .nav-list{
+    /* .nav-list{
         display: none;
-    }
-    .topnav {
+    } */
+    /* .topnav {
         display: none;
-    }
+    } */
     .mob-nav-list{
         display: flex;
         /* justify-content: space-between; */
