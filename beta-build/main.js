@@ -79,6 +79,13 @@
 // });
 
 
+const trackBox = document.querySelector(".js-track-package");
+const showTrack = document.querySelector(".js-track-container");
+
+trackBox.addEventListener('click', () => {
+    showTrack.classList.toggle("js-show-track");
+});
+
 
 const trackBtn = document.querySelector(".track-btn");
 

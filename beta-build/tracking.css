@@ -32,15 +32,20 @@
 }
 
 .js-show-track{
-    display: block;
-}
-.container{
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     padding: 0 15px;
+}
+.container{
+    display: none;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px; */
 }
 .container-left-top-heading {
     margin: 0 auto;
