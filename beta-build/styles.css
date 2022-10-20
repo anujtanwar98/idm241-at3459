@@ -374,5 +374,9 @@ footer {
     .ups-link {
         font-size: 1.25rem;
     }
-
+    .dropdown-content {
+        max-width: 150px;
+        min-width: 100px;
+        overflow: hidden;
+    }
 }

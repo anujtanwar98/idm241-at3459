@@ -112,14 +112,7 @@
 
 /* new track button start */
 
-:root{
-    --main-color: #FFB500;
-    --secondary-color: #351C15;
-    --third-color: #7C5642;
-    --white-color: #fff;
-    --black-color: #000;
-    --grey-color: #595959;
-  }
+
 .track-btn{
     border:none;
     background-color:var(--main-color);
@@ -129,7 +122,7 @@
     /* padding:1em 3em; */
     padding: 10px 30px;
     cursor:pointer;
-    border-radius:20px;
+    border-radius: 10px;
     display:flex;
     align-items:center;
     position:relative;
