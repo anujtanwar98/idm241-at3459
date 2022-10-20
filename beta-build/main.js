@@ -79,13 +79,21 @@
 // });
 
 
-const trackBox = document.querySelector(".js-track-package");
-const showTrack = document.querySelector(".js-track-container");
+// const trackBox = document.querySelector(".js-track-package");
+// const showTrack = document.querySelector(".js-track-container");
 
-trackBox.addEventListener('click', () => {
-    showTrack.classList.toggle("js-show-track");
-});
+// trackBox.addEventListener('click', () => {
+//     showTrack.classList.toggle("js-show-track");
+// });
 
+function myFunction() {
+    var x = document.getElementById("container");
+    if (x.style.display === "none") {
+      x.style.display = "flex";
+    } else {
+      x.style.display = "none";
+    }
+  }
 
 const trackBtn = document.querySelector(".track-btn");
 

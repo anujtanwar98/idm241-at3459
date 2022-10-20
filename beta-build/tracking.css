@@ -31,21 +31,21 @@
     src:url('asset/fonts/tomkin-regular.woff2');
 }
 
-.js-show-track{
+/* .js-show-track{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     padding: 0 15px;
-}
-.container{
+} */
+#container{
     display: none;
-    /* flex-direction: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 0 15px; */
+    padding: 0 15px;
 }
 .container-left-top-heading {
     margin: 0 auto;
