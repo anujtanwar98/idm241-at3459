@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta Build</title>
+    <link rel="icon" type="image/png" href="asset/images/anuj_logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tracking.css">
+</head>
+<body>
+    <header class="header">
+        <img class="logo-icon" src="asset/images/ups-logo.png" alt="my logo">
+        <h1 class="title">
+            UPS Micro-interactions
+        </h1>
+        <p><strong>BETA BUILD</strong></p>
+        <a class="ups-link" href="https://www.ups.com/us/en/Home.page" target="_blank">www.ups.com/us/en/Home.page</a>
+    </header>
+    <main class="main">
+        <nav class="topnav">
+            <ul class="nav-list">
+                <li class="nav-list-item">
+                    <a class="nav-bar" href="#">Shipping</a>
+                    <div class="dropdown-content">
+                        <a href="#" class="drop-text-cat js-link-cat">Create a Shipment </a>
+                        <a href="#" class="drop-text-cat js-link-cat">Calculate Shipping Cost </a>
+                        <!-- <a href="#" class="drop-text-cat js-link-cat">Schedule a Pickup </a>
+                        <a href="#" class="drop-text-cat js-link-cat">Find a Location </a>
+                        <a href="#" class="drop-text-cat js-link-cat">View Shipping History </a>
+                        <a href="#" class="drop-text-cat js-link-cat">Batch File Shipping </a>
+                        <a href="#" class="drop-text-cat js-link-cat">Package and Shipping Supplies </a>
+                        <a href="#" class="drop-text-cat js-link-cat">Manage Customer Orders </a> -->
+                    </div>
+                </li>
+                <li class="nav-list-item">
+                    <a class="nav-bar" href="#">Tracking</a>
+                    <div class="dropdown-content">
+                        <a href="#" class="drop-text-cat js-link-cat">Track a Package </a>
+                        <a href="#" class="drop-text-cat js-link-cat">View All Shipments </a>
+                        <!-- <a href="#" class="drop-text-cat js-link-cat">Manage with Quantum View </a>
+                        <a href="#" class="drop-text-cat js-link-cat">Change a Delivery </a>
+                        <a href="#" class="drop-text-cat js-link-cat">Go to Tracking Support </a> -->
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="container js-track-container">
+            <div class="container-left">
+                <div class="container-left-top">
+                    <h2 class="container-left-top-heading">Track a Package</h2>
+                    <p class="container-left-top-text">Enter a tracking number to see the status of your package.</p>
+                </div>
+                <div class="container-left-bottom">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="tracking-number" class="form-label">Tracking Number</label>
+                            <input type="text" class="form-input" id="tracking-number" placeholder="Enter Tracking Number">
+                        </div>
+                    </form>
+                    <button class="track-btn">
+                        <span class="track-truck-container">
+                            <svg class="track-truck" width="40" height="40" viewBox="0 0 165 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="vector-1" d="M24.75 33C22.562 33 20.4635 33.8692 18.9164 35.4164C17.3692 36.9635 16.5 39.062 16.5 41.25V123.75C16.5 125.938 17.3692 128.036 18.9164 129.584C20.4635 131.131 22.562 132 24.75 132H33.4125C34.3593 127.338 36.8888 123.146 40.5724 120.135C44.2561 117.124 48.8674 115.479 53.625 115.479C58.3826 115.479 62.9939 117.124 66.6776 120.135C70.3612 123.146 72.8907 127.338 73.8375 132H82.5C84.688 132 86.7865 131.131 88.3336 129.584C89.8808 128.036 90.75 125.938 90.75 123.75V41.25C90.75 39.062 89.8808 36.9635 88.3336 35.4164C86.7865 33.8692 84.688 33 82.5 33H24.75ZM115.5 57.75C113.312 57.75 111.214 58.6192 109.666 60.1664C108.119 61.7135 107.25 63.812 107.25 66V115.912C109.904 115.37 112.64 115.356 115.299 115.871C117.959 116.386 120.491 117.42 122.752 118.914C125.012 120.408 126.955 122.333 128.471 124.578C129.987 126.823 131.046 129.345 131.588 132H140.25C142.438 132 144.536 131.131 146.084 129.584C147.631 128.036 148.5 125.938 148.5 123.75V82.5C148.5 80.3121 147.63 78.2141 146.083 76.6673L129.583 60.1673C128.036 58.62 125.938 57.7505 123.75 57.75H115.5Z" fill="#7C5642"/>
+                                <path id="vector-2" d="M66 136.125C66 139.407 64.6962 142.555 62.3754 144.875C60.0547 147.196 56.9071 148.5 53.625 148.5C50.3429 148.5 47.1953 147.196 44.8746 144.875C42.5538 142.555 41.25 139.407 41.25 136.125C41.25 132.843 42.5538 129.695 44.8746 127.375C47.1953 125.054 50.3429 123.75 53.625 123.75C56.9071 123.75 60.0547 125.054 62.3754 127.375C64.6962 129.695 66 132.843 66 136.125ZM123.75 136.125C123.75 139.407 122.446 142.555 120.125 144.875C117.805 147.196 114.657 148.5 111.375 148.5C108.093 148.5 104.945 147.196 102.625 144.875C100.304 142.555 99 139.407 99 136.125C99 132.843 100.304 129.695 102.625 127.375C104.945 125.054 108.093 123.75 111.375 123.75C114.657 123.75 117.805 125.054 120.125 127.375C122.446 129.695 123.75 132.843 123.75 136.125Z" fill="#351C15"/>
+                            </svg>
+                        </span>
+                        <span class="track-txt">Track</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- <nav class="mob-topnav"> -->
+            <!-- <div class="ham">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div> -->
+            <!-- <ul class="mob-nav-list">
+                <li class="mob-nav-list-item">
+                    <a class="mob-nav-bar js-shipping-link" href="#">Shipping</a>
+                    <div class="mob-dropdown-content js-shipping">
+                        <a href="#">Create a Shipment <span class="ex-text">></span></a>
+                        <a href="#">Calculate Shipping Cost <span class="ex-text">></span></a>
+                        <a href="#">Schedule a Pickup <span class="ex-text">></span></a>
+                        <a href="#">Find a Location <span class="ex-text">></span></a>
+                        <a href="#">View Shipping History <span class="ex-text">></span></a>
+                        <a href="#">Batch File Shipping <span class="ex-text">></span></a>
+                        <a href="#">Package and Shipping Supplies <span class="ex-text">></span></a>
+                        <a href="#">Manage Customer Orders <span class="ex-text">></span></a>
+                      </div>
+                </li>
+                <li class="mob-nav-list-item">
+                    <a class="mob-nav-bar js-tracking-link" href="#">Tracking</a>
+                    <div class="mob-dropdown-content js-tracking">
+                        <a href="#">Track a Package <span class="ex-text">></span></a>
+                        <a href="#">View All Shipments <span class="ex-text">></span></a>
+                        <a href="#">Manage with Quantum View <span class="ex-text">></span></a>
+                        <a href="#">Change a Delivery <span class="ex-text">></span></a>
+                        <a href="#">Go to Tracking Support <span class="ex-text">></span></a>
+                    </div>
+                </li>
+                <li class="mob-nav-list-item">
+                    <a class="mob-nav-bar js-business-link" href="#">Business Solutions</a>
+                    <div class="mob-dropdown-content js-business">
+                        <a href="#">Business Shipping Tools <span class="ex-text">></span></a>
+                        <a href="#">View and Control Your Shipments <span class="ex-text">></span></a>
+                        <a href="#">Manage Shipments for Large Enterprises <span class="ex-text">></span></a>
+                        <a href="#">Understand and Pay Bills <span class="ex-text">></span></a>
+                        <a href="#">File a Claim <span class="ex-text">></span></a>
+                        <a href="#">Start or Grow Your Business <span class="ex-text">></span></a>
+                        <a href="#">Expand Your Online Business <span class="ex-text">></span></a>
+                        <a href="#">Pickup and Drop-off Options <span class="ex-text">></span></a>
+                        <a href="#">Simplify Returns <span class="ex-text">></span></a>
+                    </div>
+                </li>
+                <li class="mob-nav-list-item">
+                    <a class="mob-nav-bar js-support-link" href="#">Support</a>
+                    <div class="mob-dropdown-content js-support">
+                        <a href="#">Understand and Pay Bills <span class="ex-text">></span></a>
+                        <a href="#">Manage Your Profile <span class="ex-text">></span></a>
+                        <a href="#">File a Claim <span class="ex-text">></span></a>
+                        <a href="#">Contact Us <span class="ex-text">></span></a>
+                        <a href="#">Glossary of Terms <span class="ex-text">></span></a>
+                        <a href="#">Tracking Support <span class="ex-text">></span></a>
+                        <a href="#">Shipping Support <span class="ex-text">></span></a>
+                        <a href="#">International Tools and Resources <span class="ex-text">></span></a>
+                    </div>
+                </li>
+            </ul>
+        </nav> -->
+        <div class="sub-box">
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Triggers</h3>
+                </div>
+                <div class="small-box-text">
+                    <ul class="small-box-items">
+                        <h3>On-Hover</h3>
+                        <li class="small-box-list-items">
+                            Hover over menu items
+                        </li>
+                        <li class="small-box-list-items">
+                            Hover over categories of menu items
+                        </li>
+                        <h3>On-Click</h3>
+                        <li class="small-box-list-items">
+                            Click on Track a package category of Tracking menu item
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Rules</h3>
+                </div>
+                <div class="small-box-text">
+                    <h3>On-Hover</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            The pointer changes to a hand pointer
+                        </li>
+                        <li class="small-box-list-items">
+                            A yellow line animate under the menu items
+                        </li>
+                        <li class="small-box-list-items">
+                            If hover over to other menu items with one menu item category open, yellow line still animates
+                        </li>
+                        <li class="small-box-list-items">
+                            If hover over to other menu items with one menu item category open, the dropdown menu closes
+                        </li>
+                        <li class="small-box-list-items">
+                            If hover over to categories of menu items, >> arrow animates from right and text animates to the left
+                        </li>
+                        <li class="small-box-list-items">
+                            If you hover over category of menu items the color will change from grey color #595959 to black color: #000 
+                        </li>
+                    </ul>
+                    <h3>Off-Hover</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Hand pointer changes to regular pointer
+                        </li>
+                        <li class="small-box-list-items">
+                            Yellow Line animates out and category box disappears
+                        </li>
+                    </ul>
+                    <h3>On-Click</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            On click of Track a package category of Tracking box animates down
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Feedback</h3>
+                </div>
+                <div class="small-box-text">
+                    <h3>On-Hover</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            The pointer changes to a hand pointer
+                        </li>
+                        <li class="small-box-list-items">
+                            A yellow line animate under the menu items
+                        </li>
+                        <li class="small-box-list-items">
+                            If hover over to other menu items with one menu item category open, yellow line still animates
+                        </li>
+                        <li class="small-box-list-items">
+                            If hover over to other menu items with one menu item category open, the dropdown menu closes
+                        </li>
+                        <li class="small-box-list-items">
+                            If hover over to categories of menu items, >> arrow animates from right and text animates to the left
+                        </li>
+                        <li class="small-box-list-items">
+                            If you hover over category of menu items the color will change from grey color #595959 to black color: #000 
+                        </li>
+                    </ul>
+                    <h3>Off-Hover</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Hand pointer changes to regular pointer
+                        </li>
+                        <li class="small-box-list-items">
+                            Yellow Line animates out and category box disappears
+                        </li>
+                    </ul>
+                    <h3>On-Click</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            On click of Track a package category of Tracking box animates down
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-boxes">
+                <div class="small-box-title">
+                    <h3>Loops and Modes</h3>
+                </div>
+                <div class="small-box-text">
+                    <h2>Modes</h2>
+                    <h3>On Hover</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            Menu category items drop down on hover on Menu items
+                        </li>
+                        <li class="small-box-list-items">
+                            If you hover over category of menu items the color will change from grey color #595959 to black color: #000
+                        </li>
+                        <li class="small-box-list-items">
+                            If you hover over category of menu items the >> arrow animates from right and text animates to the left
+                        </li>
+                    </ul>
+                    <h3>On-Click</h3>
+                    <ul class="small-box-items">
+                        <li class="small-box-list-items">
+                            On click of Track a package category of Tracking box animates down
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="img">
+            <div class="images">
+                <img class="redesign-img" src="asset/images/1.png" alt="Re-Design Image">
+            </div>
+            <div class="images">
+                <img class="redesign-img" src="asset/images/2.png" alt="Re-Design Image">
+            </div>
+            <div class="images">
+                <img class="redesign-img" src="asset/images/3.png" alt="Re-Design Image">
+            </div>
+            <div class="images">
+                <img class="redesign-img" src="asset/images/4.png" alt="Re-Design Image">
+            </div>
+        </div> -->
+        <!-- <div class="additional-info">
+            <p>
+                I have some additional Micro-interactions. If you hover over category of menu items the color will change from grey color #595959 to black color: #000
+            </p>
+        </div> -->
+    </main>
+    <footer class="footer">
+        <p class="footer-text">
+            &copy; Anuj Tanwar 2022
+            <br>
+            Icon courtesy of UPS for Educational purposes only
+        </p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
