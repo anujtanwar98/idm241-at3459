@@ -1,0 +1,234 @@
+:root{
+    --main-color: #FFB500;
+    --secondary-color: #351C15;
+    --third-color: #7C5642;
+    --white-color: #fff;
+    --black-color: #000;
+    --grey-color: #595959;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+@font-face {
+    font-family: 'bank-gothic-medium';
+    src: url('asset/fonts/bank-gothic-medium.woff2');
+}
+@font-face {
+    font-family: 'bank-gothic-regular';
+    src:url('asset/fonts/bank-gothic-regular.woff2');
+}
+@font-face {
+    font-family: 'tomkin-medium';
+    src: url('asset/fonts/tomkin-medium.woff2');
+}
+@font-face {
+    font-family: 'tomkin-regular';
+    src:url('asset/fonts/tomkin-regular.woff2');
+}
+
+/* .js-show-track{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
+} */
+#container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container-left-top-heading {
+    margin: 0 auto;
+    /* padding: 0 15px; */
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding-top: 20px;
+    font-family: 'tomkin-medium';
+}
+.container-left-top-text {
+    margin: 0 auto;
+    padding-top: 5px;
+    font-family: 'tomkin-regular';
+}
+.form-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 20px;
+}
+.form-label {
+    font-family: 'tomkin-medium';
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--grey-color);
+    margin: 10px 0;
+}
+.form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 15px;
+    font-family: 'tomkin-regular';
+    border: 3px var(--main-color) solid;
+    border-radius: 10px;
+    outline: none;
+}
+.btn-primary-track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px 30px;
+    font-family: 'tomkin-medium';
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+/* .truck {
+    display: none;
+} */
+
+
+
+
+/* new track button start */
+
+
+.track-btn{
+    border:none;
+    background-color:var(--main-color);
+    color:#fff;
+    /* text-transform:uppercase; */
+    font-family: 'tomkin-medium';
+    /* padding:1em 3em; */
+    padding: 10px 30px;
+    cursor:pointer;
+    border-radius: 10px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 5px 10px rgba(255,122,0,0.2);
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.track-truck-container{
+    position:relative;
+    font-size:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-right:5px;
+}
+
+.track-truck-container::before, .track-truck-container::after{
+    content:"";
+    position:absolute;
+    left:0;
+    width:10px;
+    height:4px;
+    background-color:var(--grey-color);
+    transform-origin:left;
+    opacity:0;
+}
+
+.track-truck-container::before{
+    top:0;
+    transform:translateX(-130%);
+}
+
+.track-truck-container::after{
+    bottom:0;
+    transform:translateX(-70%);
+}
+
+.track-txt{
+    transition:all 0.2s ease-in;
+}
+/* hover animation start for track button */
+
+/* .track-btn:hover .track-txt{
+    transform:translateX(20px);
+}
+.track-btn:hover .track-truck-container{
+    animation: moveHover 0.2s linear forwards;
+}
+@keyframes moveHover{
+    0%{
+        transform:translateX(0);
+    }
+    50%{
+        transform:translateX(10px);
+    }
+    100%{
+        transform:translateX(20px);
+    }
+} */
+
+/* hover animation ends for track button */
+
+.track-btn.clicked .track-truck{
+    animation:moveForwards 0.8s linear 0.2s forwards;
+}
+
+@keyframes moveForwards{
+    35%{
+        transform:translateX(4em) rotate(-10deg);
+    }
+
+    100%{
+        transform:translateX(12em) rotate(-1deg);
+        opacity:0;
+    }
+}
+
+.track-btn.clicked .track-txt{
+    opacity:0;
+}
+
+.track-btn.clicked .secondary-text{
+    opacity:1;
+    transform:translate(-50%,-50%) scale(1);
+    transition-delay:0.8s;
+}
+
+.track-btn.clicked .track-truck-container::before,
+.track-btn.clicked .track-truck-container::after{
+    animation:scale 0.6s ease-in 0.15s;
+}
+
+@keyframes scale{
+    1%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0;
+        transform:scaleX(16);
+    }
+}
+
+/* new track button end */
