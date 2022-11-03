@@ -86,14 +86,31 @@
 //     showTrack.classList.toggle("js-show-track");
 // });
 
-function myFunction() {
-    var x = document.getElementById("container");
-    if (x.style.display === "flex") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "flex";
-    }
-  }
+// this was my old code opening box, I'm keeping it here for future reference
+
+// function myFunction() {
+//     var x = document.getElementById("container");
+//     if (x.style.display === "flex") {
+//       x.style.display = "none";
+//     } else {
+//       x.style.display = "flex";
+//     }
+//   }
+
+// This is my jQuery code, I'm keeping it here for future reference
+
+  // $(document).ready(function(){
+  //   $(".js-track-package").click(function(){
+  //     $("#container").slideUp();
+  //   });
+  //   $(".js-track-package").click(function(){
+  //     $("#container").slideDown();
+  //   });
+  // });
+  $(".js-track-package").click(function(){
+    $("#container").slideDown();
+    $("#container").css('display', 'flex');
+  });
 
 const trackBtn = document.querySelector(".track-btn");
 
