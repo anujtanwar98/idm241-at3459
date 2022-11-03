@@ -232,3 +232,27 @@
 }
 
 /* new track button end */
+
+/* close button start */
+
+.help-button-close {
+    display: flex;
+    align-self: flex-end;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+}
+.help-close-icon {
+    max-width: 40px;
+    border: none;
+    background: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* close button end */

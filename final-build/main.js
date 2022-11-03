@@ -86,12 +86,17 @@
 //     showTrack.classList.toggle("js-show-track");
 // });
 
+let on = false;
+
 function myFunction() {
     var x = document.getElementById("container");
-    if (x.style.display === "none") {
+    if (x.style.display === "flex") {
       x.style.display = "none";
+      console.log("this is closed");
     } else {
       x.style.display = "flex";
+      console.log("this is open");
+      on = true;
     }
   }
 
@@ -100,3 +105,25 @@ const trackBtn = document.querySelector(".track-btn");
 trackBtn.addEventListener("click",()=>{
     trackBtn.classList.add("clicked");
 })
+
+const trackconbox = () =>{
+
+  const trackwrap = document.querySelector('.js-track-container');
+
+  // show and hide box
+  if (on){
+      trackwrap.style.display = "none";
+      on = false;
+      console.log("on is false");
+  }
+  
+  else{
+      trackwrap.style.display = "flex";
+      on = true;
+      console.log("on is true");
+  }
+};
+
+//  event listener for help close button
+const closeButton = document.querySelector('.js-button-close');
+closeButton.addEventListener('click', trackconbox);

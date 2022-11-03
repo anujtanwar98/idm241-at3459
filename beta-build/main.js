@@ -88,7 +88,7 @@
 
 function myFunction() {
     var x = document.getElementById("container");
-    if (x.style.display === "none") {
+    if (x.style.display === "flex") {
       x.style.display = "none";
     } else {
       x.style.display = "flex";
