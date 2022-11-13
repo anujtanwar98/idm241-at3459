@@ -86,17 +86,67 @@
 //     showTrack.classList.toggle("js-show-track");
 // });
 
-function myFunction() {
-    var x = document.getElementById("container");
-    if (x.style.display === "none") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "flex";
-    }
-  }
+let on = false;
+
+// function myFunction() {
+//     var x = document.getElementById("container");
+//     if (x.style.display === "flex") {
+//       x.style.display = "none";
+//       console.log("this is closed");
+//     } else {
+//       x.style.display = "flex";
+//       console.log("this is open");
+//       on = true;
+//     }
+//   }
+
+$(".js-button-close").click(function(){
+  $("#container").slideUp();
+});
+$(".js-track-package").click(function(){
+  $("#container").slideDown();
+  $("#container").css('display', 'flex');
+});
 
 const trackBtn = document.querySelector(".track-btn");
 
 trackBtn.addEventListener("click",()=>{
     trackBtn.classList.add("clicked");
 })
+
+$(".js-button-close2").click(function(){
+  $("#container-tracking-show").slideUp();
+});
+$(".js-track-button-results").click(function(){
+  $("#container-tracking-show").slideDown();
+  $("#container-tracking-show").css('display', 'flex');
+});
+
+$(".js-track-button-results").click(function(){
+  $("#container").delay("slow").slideUp();
+  // $("Button").delay("slow").fadeOut();
+});
+
+//  for reference in future reference
+
+// const trackconbox = () =>{
+
+//   const trackwrap = document.querySelector('.js-track-container');
+
+//   // show and hide box
+//   if (on){
+//       trackwrap.style.display = "none";
+//       on = false;
+//       console.log("on is false");
+//   }
+  
+//   else{
+//       trackwrap.style.display = "flex";
+//       on = true;
+//       console.log("on is true");
+//   }
+// };
+
+// //  event listener for help close button
+// const closeButton = document.querySelector('.js-button-close');
+// closeButton.addEventListener('click', trackconbox);
