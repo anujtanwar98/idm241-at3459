@@ -233,7 +233,7 @@
 }
 
 .drop-text-cat:after {
-    content: '»';
+    content: '\25BE';
     position: absolute;
     opacity: 0;  
     top: -2px;

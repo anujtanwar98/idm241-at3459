@@ -107,6 +107,37 @@
     display: none;
 } */
 
+/* tracking results box starts */
+
+#container-tracking-show {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-tracking-show-heading {
+    margin: 0 auto;
+    padding-top: 20px;
+    font-family: 'tomkin-medium';
+}
+
+.container-tracking-show-text {
+    margin: 0 auto;
+    padding-top: 5px;
+    font-family: 'tomkin-regular';
+}
+
+.container-tracking-show-text-location {
+    margin: 0 auto;
+    padding-top: 5px;
+    font-family: 'tomkin-regular';
+}
+
+/* tracking results box ends */
+
 
 
 

@@ -114,6 +114,19 @@ trackBtn.addEventListener("click",()=>{
     trackBtn.classList.add("clicked");
 })
 
+$(".js-button-close2").click(function(){
+  $("#container-tracking-show").slideUp();
+});
+$(".js-track-button-results").click(function(){
+  $("#container-tracking-show").slideDown();
+  $("#container-tracking-show").css('display', 'flex');
+});
+
+$(".js-track-button-results").click(function(){
+  $("#container").delay("slow").slideUp();
+  // $("Button").delay("slow").fadeOut();
+});
+
 //  for reference in future reference
 
 // const trackconbox = () =>{
