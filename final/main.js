@@ -127,6 +127,10 @@ $(".js-track-button-results").click(function(){
   // $("Button").delay("slow").fadeOut();
 });
 
+$(".js-track-package").click(function(){
+  $("#container-tracking-show").slideUp();
+});
+
 //  for reference in future reference
 
 // const trackconbox = () =>{
