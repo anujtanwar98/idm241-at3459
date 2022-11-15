@@ -233,7 +233,8 @@
 }
 
 .drop-text-cat:after {
-    content: '\25BE';
+    content: '\25BC';
+    padding: 0 10px 0 0;
     position: absolute;
     opacity: 0;  
     top: -2px;
