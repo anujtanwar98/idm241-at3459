@@ -5,6 +5,8 @@
     --white-color: #fff;
     --black-color: #000;
     --grey-color: #595959;
+    --bg-color1: #fff6df;
+    --bg-color2: #dcdcdc;
 }
 
 *{
@@ -46,6 +48,7 @@
     align-items: center;
     margin: 0 auto;
     padding: 0 15px;
+    background-color: var(--bg-color2);
 }
 .container-left-top-heading {
     margin: 0 auto;

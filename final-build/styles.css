@@ -5,6 +5,8 @@
     --white-color: #fff;
     --black-color: #000;
     --grey-color: #595959;
+    --bg-color1: #fff6df;
+    --bg-color2: #dcdcdc;
 }
 
 *{
@@ -34,7 +36,7 @@
 /* nav bar start */
 
 .topnav {
-    background-color: var(--white-color);
+    background-color: var(--bg-color1);
     height: 50px;
     display: flex;
     justify-content: space-between;
