@@ -177,8 +177,11 @@
     align-items:center;
     margin-right:5px;
 }
+.track-btn:hover {
+    box-shadow:0 5px 10px var(--grey-color);
+}
 
-.track-truck-container::before, .track-truck-container::after{
+/* .track-truck-container::before, .track-truck-container::after{
     content:"";
     position:absolute;
     left:0;
@@ -187,9 +190,9 @@
     background-color:var(--grey-color);
     transform-origin:left;
     opacity:0;
-}
+} */
 
-.track-truck-container::before{
+/* .track-truck-container::before{
     top:0;
     transform:translateX(-130%);
 }
@@ -202,33 +205,12 @@
 .track-txt{
     transition:all 0.2s ease-in;
 }
-/* hover animation start for track button */
-
-/* .track-btn:hover .track-txt{
-    transform:translateX(20px);
-}
-.track-btn:hover .track-truck-container{
-    animation: moveHover 0.2s linear forwards;
-}
-@keyframes moveHover{
-    0%{
-        transform:translateX(0);
-    }
-    50%{
-        transform:translateX(10px);
-    }
-    100%{
-        transform:translateX(20px);
-    }
-} */
-
-/* hover animation ends for track button */
 
 .track-btn.clicked .track-truck{
     animation:moveForwards 0.8s linear 0.2s forwards;
-}
+} */
 
-@keyframes moveForwards{
+/* @keyframes moveForwards{
     35%{
         transform:translateX(4em) rotate(-10deg);
     }
@@ -237,9 +219,9 @@
         transform:translateX(12em) rotate(-1deg);
         opacity:0;
     }
-}
+} */
 
-.track-btn.clicked .track-txt{
+/* .track-btn.clicked .track-txt{
     opacity:0;
 }
 
@@ -252,9 +234,9 @@
 .track-btn.clicked .track-truck-container::before,
 .track-btn.clicked .track-truck-container::after{
     animation:scale 0.6s ease-in 0.15s;
-}
+} */
 
-@keyframes scale{
+/* @keyframes scale{
     1%{
         opacity:1;
     }
@@ -263,7 +245,7 @@
         opacity:0;
         transform:scaleX(16);
     }
-}
+} */
 
 /* new track button end */
 
@@ -277,6 +259,7 @@
     justify-content: center;
     border: none;
     background-color: transparent;
+    padding: 20px;
 }
 .help-close-icon {
     max-width: 40px;
