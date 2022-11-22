@@ -56,12 +56,12 @@
     /* display: flex;
     justify-content: space-between;
     align-items: center; */
-    padding-top: 20px;
+    /* padding-top: 20px; */
     font-family: 'tomkin-medium';
 }
 .container-left-top-text {
     margin: 0 auto;
-    padding-top: 5px;
+    padding-top: 10px;
     font-family: 'tomkin-regular';
 }
 .form-group {
@@ -71,7 +71,7 @@
     align-items: center;
     margin: 0 auto;
     padding: 0 15px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .form-label {
     font-family: 'tomkin-medium';
@@ -123,19 +123,19 @@
 
 .container-tracking-show-heading {
     margin: 0 auto;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     font-family: 'tomkin-medium';
 }
 
 .container-tracking-show-text {
     margin: 0 auto;
-    padding-top: 5px;
+    padding-top: 10px;
     font-family: 'tomkin-regular';
 }
 
 .container-tracking-show-text-location {
     margin: 0 auto;
-    padding-top: 5px;
+    padding: 10px 0 60px 0;
     font-family: 'tomkin-regular';
 }
 
@@ -166,7 +166,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
+    margin: 20px auto 60px;
 }
 
 .track-truck-container{
@@ -177,9 +177,9 @@
     align-items:center;
     margin-right:5px;
 }
-.track-btn:hover {
+/* .track-btn:hover {
     box-shadow:0 5px 10px var(--grey-color);
-}
+} */
 
 /* .track-truck-container::before, .track-truck-container::after{
     content:"";
@@ -259,7 +259,7 @@
     justify-content: center;
     border: none;
     background-color: transparent;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 .help-close-icon {
     max-width: 40px;
