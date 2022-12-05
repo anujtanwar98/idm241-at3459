@@ -1,0 +1,51 @@
+:root{
+    --main-color: #FFB500;
+    --secondary-color: #351C15;
+    --third-color: #7C5642;
+    --white-color: #fff;
+    --black-color: #000;
+    --grey-color: #595959;
+    --bg-color1: #fff6df;
+    --bg-color2: #dcdcdc;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.project-overview {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.project-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: var(--bg-color1);
+}
+.project-owner {
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+.project-links {
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+.project-links a {
+    color: var(--black-color);
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+.project-links a:hover {
+    color: var(--bg-color1);
+}
+
+.project-des {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study</title>
+    <link rel="icon" type="image/png" href="asset/images/anuj_logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tracking.css">
+    <link rel="stylesheet" href="case.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img class="logo-icon" src="asset/images/ups-logo.png" alt="my logo">
+        <h1 class="title">
+            UPS Micro-interactions
+        </h1>
+        <p><strong>Case Study</strong></p>
+        <a class="ups-link" href="https://www.ups.com/us/en/Home.page" target="_blank">www.ups.com/us/en/Home.page</a>
+    </header>
+    <main class="main">
+        <nav class="topnav">
+            <ul class="nav-list">
+                <li class="nav-list-item">
+                    <a class="nav-bar" href="#">Shipping</a>
+                    <div class="dropdown-content">
+                        <a href="#" class="drop-text-cat js-link-cat">Create a Shipment </a>
+                        <a href="#" class="drop-text-cat js-link-cat">Calculate Shipping Cost </a>
+                    </div>
+                </li>
+                <li class="nav-list-item">
+                    <a class="nav-bar" href="#">Tracking</a>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="myFunction()" class="drop-text-cat js-link-cat js-track-package">Track a Package </a>
+                        <a href="#" class="drop-text-cat js-link-cat">View All Shipments </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="container" class="js-track-container">
+            <button class="help-button-close js-button-close">
+                <img class="help-close-icon js-help-close-icon" src="./asset/images/close.png" alt="close button">
+            </button>
+            <div class="container-left">
+                <div class="container-left-top">
+                    <h2 class="container-left-top-heading">Track a Package</h2>
+                    <p class="container-left-top-text">Enter a tracking number to see the status of your package.</p>
+                </div>
+                <div class="container-left-bottom">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="tracking-number" class="form-label">Tracking Number</label>
+                            <input type="text" class="form-input" id="tracking-number" placeholder="Enter Tracking Number">
+                        </div>
+                    </form>
+                    <button class="track-btn js-track-button-results">
+                        <span class="track-truck-container">
+                            <svg class="track-truck" width="40" height="40" viewBox="0 0 165 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="vector-1" d="M24.75 33C22.562 33 20.4635 33.8692 18.9164 35.4164C17.3692 36.9635 16.5 39.062 16.5 41.25V123.75C16.5 125.938 17.3692 128.036 18.9164 129.584C20.4635 131.131 22.562 132 24.75 132H33.4125C34.3593 127.338 36.8888 123.146 40.5724 120.135C44.2561 117.124 48.8674 115.479 53.625 115.479C58.3826 115.479 62.9939 117.124 66.6776 120.135C70.3612 123.146 72.8907 127.338 73.8375 132H82.5C84.688 132 86.7865 131.131 88.3336 129.584C89.8808 128.036 90.75 125.938 90.75 123.75V41.25C90.75 39.062 89.8808 36.9635 88.3336 35.4164C86.7865 33.8692 84.688 33 82.5 33H24.75ZM115.5 57.75C113.312 57.75 111.214 58.6192 109.666 60.1664C108.119 61.7135 107.25 63.812 107.25 66V115.912C109.904 115.37 112.64 115.356 115.299 115.871C117.959 116.386 120.491 117.42 122.752 118.914C125.012 120.408 126.955 122.333 128.471 124.578C129.987 126.823 131.046 129.345 131.588 132H140.25C142.438 132 144.536 131.131 146.084 129.584C147.631 128.036 148.5 125.938 148.5 123.75V82.5C148.5 80.3121 147.63 78.2141 146.083 76.6673L129.583 60.1673C128.036 58.62 125.938 57.7505 123.75 57.75H115.5Z" fill="#7C5642"/>
+                                <path id="vector-2" d="M66 136.125C66 139.407 64.6962 142.555 62.3754 144.875C60.0547 147.196 56.9071 148.5 53.625 148.5C50.3429 148.5 47.1953 147.196 44.8746 144.875C42.5538 142.555 41.25 139.407 41.25 136.125C41.25 132.843 42.5538 129.695 44.8746 127.375C47.1953 125.054 50.3429 123.75 53.625 123.75C56.9071 123.75 60.0547 125.054 62.3754 127.375C64.6962 129.695 66 132.843 66 136.125ZM123.75 136.125C123.75 139.407 122.446 142.555 120.125 144.875C117.805 147.196 114.657 148.5 111.375 148.5C108.093 148.5 104.945 147.196 102.625 144.875C100.304 142.555 99 139.407 99 136.125C99 132.843 100.304 129.695 102.625 127.375C104.945 125.054 108.093 123.75 111.375 123.75C114.657 123.75 117.805 125.054 120.125 127.375C122.446 129.695 123.75 132.843 123.75 136.125Z" fill="#351C15"/>
+                            </svg>
+                        </span>
+                        <span class="track-txt">Track</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="container-tracking-show">
+            <button class="help-button-close js-button-close2">
+                <img class="help-close-icon js-help-close-icon" src="./asset/images/close.png" alt="close button">
+            </button>
+            <h2 class="container-tracking-show-heading">Tracking Results</h2>
+            <p class="container-tracking-show-text">Your Package will arrive by December 10th</p>
+            <p class="container-tracking-show-text-location">Your Package reached New York</p>
+        </div>
+        <div class="sub-box">
+            <div class="main-box">
+                <div class="project-overview">
+                    <h3 class="project-title">IDM-241 Micro-Interactions</h3>
+                    <h2 class="project-owner">By Anuj Tanwar</h2>
+                    <div class="project-links">
+                        <h1>View different phases of project</h1>
+                        <a href="https://byanuj.com/idm241/alpha/" target="_blank" rel="noopener noreferrer">Phase 1: Alpha</a>
+                        <br>
+                        <a href="https://byanuj.com/idm241/alpha/build" target="_blank" rel="noopener noreferrer">Alpha Build</a>
+                        <br>
+                        <a href="https://byanuj.com/idm241/beta/" target="_blank" rel="noopener noreferrer">Phase 2: Beta</a>
+                        <br>
+                        <a href="https://byanuj.com/idm241/beta/build" target="_blank" rel="noopener noreferrer">Beta Build</a>
+                        <br>
+                        <a href="https://byanuj.com/idm241/final/" target="_blank" rel="noopener noreferrer">Phase 3: Final</a>
+                        <br>
+                        <a href="https://byanuj.com/idm241/final/build" target="_blank" rel="noopener noreferrer">Final Build</a>
+                    </div>
+                    <h1 class="project-title">The Overview</h1>
+                    <p class="project-des">Micro-interactions are small animations that occur when a user interacts with a website or app. They are used to enhance the user experience and make the interface more intuitive. Micro-interactions are small animations that occur when a user interacts with a website or app. They are used to enhance the user experience and make the interface more intuitive.</p>
+                    <h1 class="project-title">Context and Challenge</h1>
+                    <p class="project-des">In my IDM-241 class, our project goal was to create or improve micro-interactions.</p>
+                    <p class="project-des">The project was divided into three phases Alpha, Beta and Final and every phase has a Build Version over a period of 10 weeks.</p>
+                    <br>
+                    <p class="project-des">The reason I picked UPS website  as when a user visit UPS website, and try to interact with the menu system they have to click every menu item in order to see categories of the menu items, which is very annoying and time consuming for the user and in order to close menu system the user they have to click outside on the page. Category options like Tracking a user wants to interact with it without loading any page and very quickly.</p>
+                    <br>
+                    <p class="project-des">So I decided to make it more intuitive and user friendly by adding micro-interactions, which can help user to interact with the menu system in a more efficient way.Firstly I added a micro-interaction to the menu system rather than clicking on the menu item to see the categories of the menu item, the user can hover over the menu item and the categories will appear. Secondly I added a micro-interaction when a user hover over category items they can interact and know which category they are one and user can click track a package to open the tracking box without loading any page and the user can enter the tracking number and click on the track button to see the tracking results without loading any page. The user can close the tracking box by clicking on the close button and user can also close the tracking results box by clicking on the close button.</p>
+                    <br>
+                    <p class="project-des">This was a individual project that I did. From designing the micro-interactions to coding the micro-interactions, I did everything by myself. More importantly, it was also for us to know/learn what made for a truly engaging interaction.</p>
+                    <h1 class="project-title">The Process and Insight</h1>
+                    <p class="project-des">I looked different website to began with. I wanted to pick a website which is very commonly used in day to day task to find or search something. I looked at different websites like Amazon, eBay, UPS, USPS, FedEx, etc. I decided to pick UPS website because it is very commonly used by people to track their packages.</p>
+                    <br>
+                    <p class="project-des">I wanted to keep website very simple and wanted to use UPS logo color for the main content of the website to show all different triggers, rules, feedback and loops & modes.</p>
+                    <br>
+                    <p class="project-des">These are different prototypes I made to show what will be I building.</p>
+                    <h1 class="project-title">For Alpha</h1>
+                    <div class="img">
+                        <div class="images">
+                            <img class="redesign-img" src="asset/images/1.png" alt="Re-Design Image">
+                        </div>
+                        <div class="images">
+                            <img class="redesign-img" src="asset/images/2.png" alt="Re-Design Image">
+                        </div>
+                        <div class="images">
+                            <img class="redesign-img" src="asset/images/3.png" alt="Re-Design Image">
+                        </div>
+                        <div class="images">
+                            <img class="redesign-img" src="asset/images/4.png" alt="Re-Design Image">
+                        </div>
+                    </div>
+                    <br>
+                    <h1 class="project-title">For Beta</h1>
+                    <div class="img">
+                        <div class="images">
+                            <img class="redesign-img" src="asset/images/5.png" alt="Re-Design Image">
+                        </div>
+                        <div class="images">
+                            <img class="redesign-img" src="asset/images/6.png" alt="Re-Design Image">
+                        </div>
+                        <div class="images">
+                            <img class="redesign-img" src="asset/images/7.png" alt="Re-Design Image">
+                        </div>
+                    </div>
+                    <br>
+                    <h1 class="project-title">For Final</h1>
+                    <p class="project-des">FInal design includes Alpha and Beta design and their functionality to it.</p>
+                    <div class="img">
+                        <div class="images">
+                            <img class="redesign-img" src="asset/images/8.png" alt="Re-Design Image">
+                        </div>
+                        <div class="images">
+                            <img class="redesign-img" src="asset/images/9.png" alt="Re-Design Image">
+                        </div>
+                        <div class="images">
+                            <img class="redesign-img" src="asset/images/10.png" alt="Re-Design Image">
+                        </div>
+                        <div class="images">
+                            <img class="redesign-img" src="asset/images/11.png" alt="Re-Design Image">
+                        </div>
+                        <div class="images">
+                            <img class="redesign-img" src="asset/images/12.png" alt="Re-Design Image">
+                        </div>
+                        <div class="images">
+                            <img class="redesign-img" src="asset/images/13.png" alt="Re-Design Image">
+                        </div>
+                        <div class="images">
+                            <img class="redesign-img" src="asset/images/14.png" alt="Re-Design Image">
+                        </div>
+                        <div class="images">
+                            <img class="redesign-img" src="asset/images/15.png" alt="Re-Design Image">
+                        </div>
+                        <div class="images">
+                            <img class="redesign-img" src="asset/images/16.png" alt="Re-Design Image">
+                        </div>
+                        <div class="images">
+                            <img class="redesign-img" src="asset/images/17.png" alt="Re-Design Image">
+                        </div>
+                        <div class="images">
+                            <img class="redesign-img" src="asset/images/18.png" alt="Re-Design Image">
+                        </div>
+                    </div>
+                    <br>
+                    <h1 class="project-title">The Results</h1>
+                    <p class="project-des">
+                        This project went really well I did able to achieve the goal of adding different micro-interactions to the UPS menu system and I was able to make it more intuitive and user friendly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer-text">
+            &copy; Anuj Tanwar 2022
+            <br>
+            Icon courtesy of UPS for Educational purposes only
+        </p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
